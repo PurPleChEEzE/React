@@ -28,15 +28,15 @@ const router = createBrowserRouter([
         element: <PathVariable />,
     },
     {
-        path: "/AboutPage",
+        path: "/Training/AboutPage",
         element: <AboutPage />,
     },
     {
-        path: "/AddrPage",
+        path: "/Training/AddrPage",
         element: <AddrPage />,
     },
     {
-        path: "/NamePage/:value",
+        path: "/Training/NamePage/:value",
         element: <NamePage />,
     },
 ]);

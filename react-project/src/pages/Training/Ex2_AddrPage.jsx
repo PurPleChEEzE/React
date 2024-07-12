@@ -1,12 +1,10 @@
 // p태그 입력된 주소 : 쿼리스트링에 입력한 주소
 // 뒤로가기 o
 // url : /Training/Addrpage
-import { useLocation } from "react-router-dom";
 import BackButton from "../../components/common/BackButton";
+import useQuery from "../../components/common/useQuery";
 
-function useQuery() {
-    return new URLSearchParams(useLocation().search);
-}
+
 
 function AddrPage() {
     const query = useQuery();

@@ -27,13 +27,13 @@ function App() {
       <h1>Ex1_실습 문제</h1>
       <ul>
         <li>
-          <Link to="/AboutPage" className="no-underline">Ex1_AboutPage</Link>
+          <Link to="/Training/AboutPage" className="no-underline">Ex1_AboutPage</Link>
         </li>
         <li>
-          <Link to="/AddrPage?addr=안양" className="no-underline">Ex2_AddrPage</Link>
+          <Link to="/Training/AddrPage?addr=안양" className="no-underline">Ex2_AddrPage</Link>
         </li>
         <li>
-          <Link to="/NamePage/김아태" className="no-underline">Ex3_NamePage</Link>
+          <Link to="/Training/NamePage/김아태" className="no-underline">Ex3_NamePage</Link>
         </li>
       </ul>
     </div>
