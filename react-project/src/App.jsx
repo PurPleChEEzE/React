@@ -23,6 +23,9 @@ function App() {
         <li>
           <Link to="/JSX" className="no-underline">05_JSX</Link>
         </li>
+        <li>
+          <Link to="/Propspage" className="no-underline">06_PropsPage</Link>
+        </li>
 
       </ul>
 
@@ -33,10 +36,21 @@ function App() {
           <Link to="/Training/AboutPage" className="no-underline">Ex1_AboutPage</Link>
         </li>
         <li>
-          <Link to="/Training/AddrPage?addr=안양" className="no-underline">Ex2_AddrPage</Link>
+          <Link to="/Training/AddrPage?addr=안양" className="no-underline">Ex1_AddrPage</Link>
         </li>
         <li>
-          <Link to="/Training/NamePage/김아태" className="no-underline">Ex3_NamePage</Link>
+          <Link to="/Training/NamePage/김아태" className="no-underline">Ex1_NamePage</Link>
+        </li>
+      </ul>
+
+      <hr />
+      <h1>Ex2_실습 문제</h1>
+      <ul>
+        <li>
+          <Link to="/Training/InlinePage" className="no-underline">Ex2_InlinePage</Link>
+        </li>
+        <li>
+          <Link to="/Training/OutStyleSheetPage" className="no-underline">Ex2_OutStyleSheetPage</Link>
         </li>
       </ul>
     </div>
