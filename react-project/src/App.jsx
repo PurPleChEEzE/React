@@ -19,6 +19,15 @@ function App() {
         <li>
           <Link to="/PathVariable/김아태" className="no-underline">04_PathVariable</Link>
         </li>
+        <li>
+          <Link to="/AboutPage" className="no-underline">Ex1_AboutPage</Link>
+        </li>
+        <li>
+          <Link to="/AddrPage?addr=안양" className="no-underline">Ex2_AddrPage</Link>
+        </li>
+        <li>
+          <Link to="/NamePage/김아태" className="no-underline">Ex3_NamePage</Link>
+        </li>
       </ul>
     </div>
 
