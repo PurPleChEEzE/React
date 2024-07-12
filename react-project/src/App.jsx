@@ -6,6 +6,7 @@ import "./styles/App.css";
 function App() {
   return (
     <div>
+      <h1>기본</h1>
       <ul>
         <li>
           <Link to="/" className="no-underline">Home</Link>
@@ -19,6 +20,12 @@ function App() {
         <li>
           <Link to="/PathVariable/김아태" className="no-underline">04_PathVariable</Link>
         </li>
+
+      </ul>
+
+      <hr />
+      <h1>Ex1_실습 문제</h1>
+      <ul>
         <li>
           <Link to="/AboutPage" className="no-underline">Ex1_AboutPage</Link>
         </li>

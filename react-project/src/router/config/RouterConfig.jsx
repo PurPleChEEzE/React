@@ -9,6 +9,7 @@ import AddrPage from "../../pages/Training/Ex2_AddrPage.jsx";
 import NamePage from "../../pages/Training/Ex3_NamePage.jsx";
 
 
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -27,15 +28,15 @@ const router = createBrowserRouter([
         element: <PathVariable />,
     },
     {
-        path: "/Training/Ex1_AboutPage",
+        path: "/AboutPage",
         element: <AboutPage />,
     },
     {
-        path: "/Training/Ex2_AddrPage",
+        path: "/AddrPage",
         element: <AddrPage />,
     },
     {
-        path: "/Training/Ex3_NamePage/:value",
+        path: "/NamePage/:value",
         element: <NamePage />,
     },
 ]);
