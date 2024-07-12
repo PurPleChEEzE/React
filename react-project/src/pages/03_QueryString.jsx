@@ -1,5 +1,6 @@
 // 현재 URL 정보를 가져오는 router hook
 import { useLocation } from "react-router-dom";
+import BackButton from "../components/common/BackButton";
 
 function useQuery() {
     return new URLSearchParams(useLocation().search);
@@ -14,6 +15,7 @@ function QueryString() {
             <p>
                 쿼리스트링의 값 :{getAge} , {getName}
             </p>
+            <BackButton />
         </div>
     );
 }
