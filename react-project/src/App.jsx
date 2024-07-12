@@ -20,6 +20,9 @@ function App() {
         <li>
           <Link to="/PathVariable/김아태" className="no-underline">04_PathVariable</Link>
         </li>
+        <li>
+          <Link to="/JSX" className="no-underline">05_JSX</Link>
+        </li>
 
       </ul>
 
