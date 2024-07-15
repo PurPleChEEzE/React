@@ -26,6 +26,9 @@ function App() {
         <li>
           <Link to="/Propspage" className="no-underline">06_PropsPage</Link>
         </li>
+        <li>
+          <Link to="/Rendering" className="no-underline">06_RenderPage</Link>
+        </li>
 
       </ul>
 
