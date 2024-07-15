@@ -27,7 +27,10 @@ function App() {
           <Link to="/Propspage" className="no-underline">06_PropsPage</Link>
         </li>
         <li>
-          <Link to="/Rendering" className="no-underline">06_RenderPage</Link>
+          <Link to="/RenderPage" className="no-underline">06_RenderPage</Link>
+        </li>
+        <li>
+          <Link to="/EventPage" className="no-underline">06_EventPage</Link>
         </li>
 
       </ul>

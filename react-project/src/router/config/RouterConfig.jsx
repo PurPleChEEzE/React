@@ -6,7 +6,8 @@ import QueryString from "../../pages/03_QueryString.jsx";
 import PathVariable from "../../pages/04_PathVariable.jsx";
 import Jsx from "../../pages/05_JSX.jsx";
 import PropsPage from "../../pages/06_PropsPage.jsx";
-import Rendering from "../../pages/06_RenderPage.jsx"
+import RenderPage from "../../pages/06_RenderPage.jsx"
+import EventPage from "../../pages/07_EventPage.jsx";
 
 import AboutPage from "../../pages/Training/Ex1_AboutPage.jsx";
 import AddrPage from "../../pages/Training/Ex1_AddrPage.jsx";
@@ -42,8 +43,12 @@ const router = createBrowserRouter([
         element: <PropsPage />,
     },
     {
-        path: "/Rendering",
-        element: <Rendering />,
+        path: "/RenderPage",
+        element: <RenderPage />,
+    },
+    {
+        path: "/EventPage",
+        element: <EventPage />,
     },
 
 
