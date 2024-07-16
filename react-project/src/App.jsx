@@ -42,13 +42,13 @@ function App() {
       <h1>Ex1_실습 문제</h1>
       <ul>
         <li>
-          <Link to="/Training/AboutPage" className="no-underline">Ex1_AboutPage</Link>
+          <Link to="/training/AboutPage" className="no-underline">Ex1_AboutPage</Link>
         </li>
         <li>
-          <Link to="/Training/AddrPage?addr=안양" className="no-underline">Ex1_AddrPage</Link>
+          <Link to="/training/AddrPage?addr=안양" className="no-underline">Ex1_AddrPage</Link>
         </li>
         <li>
-          <Link to="/Training/NamePage/김아태" className="no-underline">Ex1_NamePage</Link>
+          <Link to="/training/NamePage/김아태" className="no-underline">Ex1_NamePage</Link>
         </li>
       </ul>
 
@@ -56,11 +56,19 @@ function App() {
       <h1>Ex2_실습 문제</h1>
       <ul>
         <li>
-          <Link to="/Training/InlinePage" className="no-underline">Ex2_InlinePage</Link>
+          <Link to="/training/InlinePage" className="no-underline">Ex2_InlinePage</Link>
         </li>
         <li>
-          <Link to="/Training/OutStyleSheetPage" className="no-underline">Ex2_OutStyleSheetPage</Link>
+          <Link to="/training/OutStyleSheetPage" className="no-underline">Ex2_OutStyleSheetPage</Link>
         </li>
+      </ul>
+      <hr />
+      <h1>Ex3_실습 문제</h1>
+      <ul>
+        <li>
+          <Link to="/training/StateQuizPage" className="no-underline">Ex3_StateQuizPage</Link>
+        </li>
+
       </ul>
     </div>
 

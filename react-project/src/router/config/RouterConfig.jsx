@@ -10,12 +10,14 @@ import RenderPage from "../../pages/06_RenderPage.jsx"
 import EventPage from "../../pages/07_EventPage.jsx";
 import StatePage from "../../pages/08_StatePage.jsx";
 
-import AboutPage from "../../pages/Training/Ex1_AboutPage.jsx";
-import AddrPage from "../../pages/Training/Ex1_AddrPage.jsx";
-import NamePage from "../../pages/Training/Ex1_NamePage.jsx";
+import AboutPage from "../../pages/training/Ex1_AboutPage.jsx";
+import AddrPage from "../../pages/training/Ex1_AddrPage.jsx";
+import NamePage from "../../pages/training/Ex1_NamePage.jsx";
 
-import InlinePage from "../../pages/Training/Ex2_InlinePage.jsx";
-import OutStyleSheetPage from "../../pages/Training/Ex2_OutStyleSheetPage.jsx";
+import InlinePage from "../../pages/training/Ex2_InlinePage.jsx";
+import OutStyleSheetPage from "../../pages/training/Ex2_OutStyleSheetPage.jsx";
+
+import StateQuizPage from "../../pages/training/Ex3_StateQuizPage.jsx";
 
 
 const router = createBrowserRouter([
@@ -57,26 +59,31 @@ const router = createBrowserRouter([
     },
 
 
+
     {
-        path: "/Training/AboutPage",
+        path: "/training/AboutPage",
         element: <AboutPage />,
     },
     {
-        path: "/Training/AddrPage",
+        path: "/training/AddrPage",
         element: <AddrPage />,
     },
     {
-        path: "/Training/NamePage/:value",
+        path: "/training/NamePage/:value",
         element: <NamePage />,
     },
 
     {
-        path: "/Training/InlinePage",
+        path: "/training/InlinePage",
         element: <InlinePage />,
     },
     {
-        path: "/Training/OutStyleSheetPage",
+        path: "/training/OutStyleSheetPage",
         element: <OutStyleSheetPage />,
+    },
+    {
+        path: "/training/StateQuizPage",
+        element: <StateQuizPage />,
     },
 
 ]);
