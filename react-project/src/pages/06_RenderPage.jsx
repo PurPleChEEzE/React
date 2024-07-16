@@ -1,4 +1,4 @@
-import Rendering from "../components/Rendering";
+import Rendering from "../components/06_Rendering";
 import BackButton from "../components/common/BackButton";
 
 export default function RenderPage() {

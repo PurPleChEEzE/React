@@ -8,6 +8,7 @@ import Jsx from "../../pages/05_JSX.jsx";
 import PropsPage from "../../pages/06_PropsPage.jsx";
 import RenderPage from "../../pages/06_RenderPage.jsx"
 import EventPage from "../../pages/07_EventPage.jsx";
+import StatePage from "../../pages/08_StatePage.jsx";
 
 import AboutPage from "../../pages/Training/Ex1_AboutPage.jsx";
 import AddrPage from "../../pages/Training/Ex1_AddrPage.jsx";
@@ -47,8 +48,12 @@ const router = createBrowserRouter([
         element: <RenderPage />,
     },
     {
-        path: "/EventPage",
+        path: "/Event",
         element: <EventPage />,
+    },
+    {
+        path: "/State",
+        element: <StatePage />,
     },
 
 

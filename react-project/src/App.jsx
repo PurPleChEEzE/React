@@ -30,7 +30,10 @@ function App() {
           <Link to="/RenderPage" className="no-underline">06_RenderPage</Link>
         </li>
         <li>
-          <Link to="/EventPage" className="no-underline">06_EventPage</Link>
+          <Link to="/Event" className="no-underline">07_EventPage</Link>
+        </li>
+        <li>
+          <Link to="/State" className="no-underline">08_StatePage</Link>
         </li>
 
       </ul>
