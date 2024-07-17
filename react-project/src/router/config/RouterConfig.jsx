@@ -9,6 +9,7 @@ import PropsPage from "../../pages/06_PropsPage.jsx";
 import RenderPage from "../../pages/06_RenderPage.jsx"
 import EventPage from "../../pages/07_EventPage.jsx";
 import StatePage from "../../pages/08_StatePage.jsx";
+import FormHandlePage from "../../pages/09_FormHandlePage.jsx";
 
 import AboutPage from "../../pages/training/Ex1_AboutPage.jsx";
 import AddrPage from "../../pages/training/Ex1_AddrPage.jsx";
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
     {
         path: "/State",
         element: <StatePage />,
+    },
+    {
+        path: "/FormHandlePage",
+        element: <FormHandlePage />,
     },
 
 
