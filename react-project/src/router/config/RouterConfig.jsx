@@ -11,6 +11,7 @@ import EventPage from "../../pages/07_EventPage.jsx";
 import StatePage from "../../pages/08_StatePage.jsx";
 import FormHandlePage from "../../pages/09_FormHandlePage.jsx";
 import LiftingStatePage from "../../pages/10_LiftingStatePage.jsx";
+import LiftingStatePage2 from "../../pages/11_LiftingStatePage.jsx";
 
 import AboutPage from "../../pages/training/Ex1_AboutPage.jsx";
 import AddrPage from "../../pages/training/Ex1_AddrPage.jsx";
@@ -20,7 +21,6 @@ import InlinePage from "../../pages/training/Ex2_InlinePage.jsx";
 import OutStyleSheetPage from "../../pages/training/Ex2_OutStyleSheetPage.jsx";
 
 import StateQuizPage from "../../pages/training/Ex3_StateQuizPage.jsx";
-
 
 const router = createBrowserRouter([
     {
@@ -66,6 +66,10 @@ const router = createBrowserRouter([
     {
         path: "/LiftingStatePage",
         element: <LiftingStatePage />,
+    },
+    {
+        path: "/LiftingStatePage2",
+        element: <LiftingStatePage2 />,
     },
 
 
