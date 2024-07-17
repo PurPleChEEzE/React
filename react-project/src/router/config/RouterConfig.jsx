@@ -10,6 +10,7 @@ import RenderPage from "../../pages/06_RenderPage.jsx"
 import EventPage from "../../pages/07_EventPage.jsx";
 import StatePage from "../../pages/08_StatePage.jsx";
 import FormHandlePage from "../../pages/09_FormHandlePage.jsx";
+import LiftingStatePage from "../../pages/10_LiftingStatePage.jsx";
 
 import AboutPage from "../../pages/training/Ex1_AboutPage.jsx";
 import AddrPage from "../../pages/training/Ex1_AddrPage.jsx";
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
     {
         path: "/FormHandlePage",
         element: <FormHandlePage />,
+    },
+    {
+        path: "/LiftingStatePage",
+        element: <LiftingStatePage />,
     },
 
 

@@ -7,6 +7,9 @@ import router from "./router/config/RouterConfig.jsx";
 // import QueryString from "./pages/03_QueryString.jsx";
 // import PathVariable from "./pages/04_PathVariable.jsx";
 
+import store from "./redux/config/store.js";
+import { Provider } from "react-redux";
+
 // import Home from "./App.jsx";
 import { RouterProvider } from "react-router-dom";
 
@@ -14,10 +17,11 @@ import { RouterProvider } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* 라우터 적용 */}
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
-
+    <Provider store={store}>
+      {/* 라우터 적용 */}
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
+    </Provider>
   </React.StrictMode>
 );

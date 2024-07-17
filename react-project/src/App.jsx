@@ -38,6 +38,9 @@ function App() {
         <li>
           <Link to="/FormHandlePage" className="no-underline">09_FormHandlePage</Link>
         </li>
+        <li>
+          <Link to="/LiftingStatePage" className="no-underline">10_LiftingStatePage</Link>
+        </li>
 
       </ul>
 
