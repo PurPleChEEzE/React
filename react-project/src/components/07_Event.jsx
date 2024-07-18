@@ -22,7 +22,7 @@ export default function Event() {
     //이벤트를 등록, 삭제 등의 작업을 수행
 
     //2. 이벤트 핸들러
-    // <button onclick = "func()">버튼</button>
+    // <button onClick = "func()">버튼</button>
 
     //function func({
     // 실행할 동작 정의

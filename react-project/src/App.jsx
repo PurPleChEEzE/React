@@ -1,12 +1,14 @@
 // import PrintWorld from "./components/01_PrintWorld";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./styles/App.css";
+import Header from "./components/common/Header";
+import Nav from "./components/common/Nav";
 
 
 function App() {
   return (
     <div>
-      <h1>기본</h1>
+      {/* <h1>기본</h1>
       <ul>
         <li>
           <Link to="/" className="no-underline">Home</Link>
@@ -44,6 +46,9 @@ function App() {
         <li>
           <Link to="/LiftingStatePage2" className="no-underline">11_LiftingStatePage</Link>
         </li>
+        <li>
+          <Link to="/AxiosPage" className="no-underline">12_AxiosPage</Link>
+        </li>
 
       </ul>
 
@@ -78,7 +83,13 @@ function App() {
           <Link to="/training/StateQuizPage" className="no-underline">Ex3_StateQuizPage</Link>
         </li>
 
-      </ul>
+      </ul> */}
+      <Header></Header>
+      <Nav></Nav>
+      <section>
+        <h2>홈</h2>
+        <p>님 안녕하세요! 홈페이지에 오신 것을 환영합니다.</p>
+      </section>
     </div>
 
   );
