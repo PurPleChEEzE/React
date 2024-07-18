@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counter from "../modules/counter";
+import FreeListSlice from "../modules/board/free/FreeListSlice";
+import counterReducer from "../modules/counter";
 
 export default configureStore({
     reducer: {
-        counter: counter,
+        counter: counterReducer,
+        freeList: FreeListSlice,
     }
 })

@@ -1,14 +1,15 @@
 import axiosInstance from "../../config/axiosConfig";
 
-export const getFreeList = async () => {
+export const getFreeList = async ({ cpage, category, searchText }) => {
     try {
         const response = await axiosInstance.get("/freeBoard", {
             params: {
-                cpage: 1,
-                category: "fb_title",
-                searchText: ""
+                cpage: cpage,
+                category: category,
+                searchText: searchText
             }
         })
+        console.log("aa : " + response)
         return response.data;
 
     } catch (err) {
