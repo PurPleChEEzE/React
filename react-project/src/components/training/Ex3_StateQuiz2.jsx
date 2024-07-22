@@ -1,38 +1,31 @@
 import { useState } from "react";
 
 export default function StateQuiz2() {
-    const [inputValue, setInputValue] = useState("");
-    const [guguResult, setGuguResult] = useState(null);
+  const [q2Gugudan, setQ2Gugudan] = useState();
+  const [q2Sum, setQ2Sum] = useState();
+  let sum = 0;
 
-    function getNumber() {
-        const numberValue = parseInt(inputValue);
-
-        if (isNaN(numberValue)) {
-            setGuguResult("나이를 유효한 숫자로 입력하세요");
-        } else {
-            let count = 0;
-            for (let i = 1; i <= 9; i++) {
-                count += numberValue * i;
-            }
-            setGuguResult(count);
-        }
+  function gugudan() {
+    for (let i = 1; i < 10; i++) {
+      sum += q2Gugudan * i;
     }
+    setQ2Sum(sum);
+  }
 
-
-
-    return (
-        <>
-            <p>입력해 구구단 합을 구할 숫자를 입력</p>
-            <input
-                type="text" placeholder="숫자 입력" id="input-gugudan"
-                onChange={(e) => setInputValue(e.target.value)}
-            />
-            <button onClick={getNumber}>제출</button>
-            {guguResult !== null && (
-                <div id="input-gugudan">
-                    <p>결과 : {guguResult}</p>
-                </div>
-            )}
-        </>
-    );
+  return (
+    <>
+      <h3>
+        Q2. 몇단을 출력할지 입력받고, 확인 버튼을 누르면 innerHTML을 활용해
+        구구단의 합계를 div 태그에 출력하세요.
+      </h3>
+      <input
+        type="text"
+        id="input-gugudan"
+        onChange={(e) => setQ2Gugudan(e.target.value)}
+      />
+      <button onClick={gugudan}>확인</button>
+      <div id="gugudan">{q2Sum}</div>
+      <hr />
+    </>
+  );
 }

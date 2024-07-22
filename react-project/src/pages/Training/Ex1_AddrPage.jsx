@@ -1,24 +1,19 @@
-// p태그 입력된 주소 : 쿼리스트링에 입력한 주소
-// 뒤로가기 o
-// url : /Training/Addrpage
+// URL : /Training/AddrPage?addr=안양시
+// <p> 입력된 주소 : [쿼리스트링에 입력한 주소] </p>
+// 뒤로가기 O
 import BackButton from "../../components/common/BackButton";
-import useQuery from "../../components/common/useQuery";
-
-
+import UseQuery from "../../components/common/UseQuery";
 
 function AddrPage() {
-    const query = useQuery();
-    //쿼리스트링의 key가 age인 값을 가져오겠다
-    const getAddr = query.get("addr");
-    return (
-        <div>
-            <p>
-                주소값 :{getAddr}
-            </p>
-            <BackButton />
-        </div>
-    );
-}
+  const query = UseQuery();
+  const addr = query.get("addr");
 
+  return (
+    <>
+      <p>입력된 주소 : {addr}</p>
+      <BackButton></BackButton>
+    </>
+  );
+}
 
 export default AddrPage;

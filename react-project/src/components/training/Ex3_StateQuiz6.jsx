@@ -1,35 +1,34 @@
 import { useState } from "react";
 
 export default function StateQuiz6() {
-    const [inputValue, setInputValue] = useState("");
-    const [numberResult, setNumberResult] = useState(null);
+  const [q5Number, setQ5Number] = useState(); // 사용자 입력
+  const [q5Msg, setQ5Msg] = useState();
 
-
-
-    function getWeather() {
-        const numberValue = inputValue;
-
-        if (isNaN(numberValue)) {
-            setNumberResult(" 유효한 숫자로 입력하세요");
-        } else if (numberValue >= 3 && numberValue <= 5) {
-            setNumberResult("봄");
-        } else if (numberValue >= 6 && numberValue <= 8) {
-            setNumberResult("여름");
-        } else if (numberValue >= 9 && numberValue <= 11) {
-            setNumberResult("가을");
-        } else if (numberValue == 12 || numberValue == 1 || numberValue == 2) {
-            setNumberResult("겨울");
-        } else {
-            setNumberResult("값이 12를 넘습니다.")
-        }
-
+  function season() {
+    const number = parseInt(q5Number);
+    if ([3, 4, 5].includes(number)) {
+      setQ5Msg("봄");
+    } else if ([6, 7, 8].includes(number)) {
+      setQ5Msg("여름");
+    } else if ([9, 10, 11].includes(number)) {
+      setQ5Msg("가을");
+    } else if ([12, 1, 2].includes(number)) {
+      setQ5Msg("겨울");
+    } else {
+      setQ5Msg("해당하는 계정이 없습니다.");
     }
+  }
 
-    return (
-        <>
-            <input type="text" id="q4-number" placeholder="계절에 해당하는 숫자 입력" onChange={(e) => setInputValue(e.target.value)} />
-            <button onClick={getWeather}>제출</button>
-            {numberResult != null && <p>계절 : {numberResult}</p>}
-        </>
-    );
+  return (
+    <>
+      <hr />
+      <input
+        type="text"
+        id="q6-num"
+        onChange={(e) => setQ5Number(e.target.value)}
+      />
+      <button onClick={season}>확인</button>
+      <div id="q6-result">{q5Msg}</div>
+    </>
+  );
 }

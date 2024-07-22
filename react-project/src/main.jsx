@@ -1,19 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./index.css";
 import router from "./router/config/RouterConfig.jsx";
-// import RouterPage from "./pages/02_RouterPage.jsx";
-// import QueryString from "./pages/03_QueryString.jsx";
-// import PathVariable from "./pages/04_PathVariable.jsx";
 
 import store from "./redux/config/store.js";
 import { Provider } from "react-redux";
 
-// import Home from "./App.jsx";
+// 라우터를 사용하기 위해서 필요한 함수들 import
 import { RouterProvider } from "react-router-dom";
-
-
+import "./styles/App.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

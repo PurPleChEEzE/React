@@ -1,18 +1,23 @@
 import { useState } from "react";
 
 export default function ObjectState() {
-    const [user, setUser] = useState({ name: "John", age: 20 })
+  // 객체 초기값 설정
+  const [user, setUser] = useState({ name: "John", age: 19 });
 
-    function updateName() {
-        setUser(prevUser => ({ ...prevUser, name: "Jane" }));
-    }
+  // const user = { name: "John", age: 19 };
 
+  // 객체 상태 업데이트
+  function updateName() {
+    // Spread 연산자
+    // { name: "Jane", age: 19 }
+    setUser((user) => ({ ...user, name: "Jane" }));
+  }
 
-    return (
-        <div>
-            <p>Name : {user.name}</p>
-            <p>Age : {user.age}</p>
-            <button onClick={updateName}>UpdateName</button>
-        </div>
-    )
+  return (
+    <div>
+      <p> name : {user.name}</p>
+      <p> age : {user.age}</p>
+      <button onClick={updateName}>Update Name</button>
+    </div>
+  );
 }
